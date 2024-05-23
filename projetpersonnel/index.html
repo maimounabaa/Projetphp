@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS La Victoire - Accueil</title>
+    <link rel="stylesheet" href="style.css"> <!-- Lien vers le fichier de styles CSS -->
+</head>
+<body>
+    <header>
+        <h1>CS La Victoire</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#programs">Programmes</a></li>
+                <li><a href="#events">Événements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h2>Bienvenue à CS La Victoire</h2>
+        <p>Une école privée dédiée à l'excellence académique et au développement personnel de chaque élève.</p>
+        <a href="#programs" class="cta-button">Explorer nos programmes</a>
+    </section>
+
+    
+
+    <section id="about">
+        <h2>À propos de nous</h2>
+        <p>CS La Victoire s'engage à offrir un environnement d'apprentissage stimulant et inclusif.</p>
+        <!-- Ajoutez ici plus d'informations sur l'école -->
+    </section>
+    <section id="programs">
+        <h2>Nos Programmes</h2>
+    
+        <div id="maternelle-program">
+            <h3>Programme Maternelle</h3>
+            <p>Description du programme...</p>
+            <a href="#inscription-maternelle" class="cta-button">Inscription</a>
+        </div>
+    
+        <div id="primaire-program">
+            <h3>Programme Primaire</h3>
+            <p>Description du programme...</p>
+            <a href="#inscription-primaire" class="cta-button">Inscription</a>
+        </div>
+    </section>
+    
+    <!-- Formulaire d'inscription Maternelle -->
+    <div id="inscription-maternelle" class="form-container">
+        <h3>Inscription au Programme Maternelle</h3>
+        <form action="inscription_maternelle.php" method="post">
+            <label for="parent_name">Nom du parent :</label>
+            <input type="text" id="parent_name" name="parent_name" required>
+    
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="child_name">Nom de l'enfant :</label>
+            <input type="text" id="child_name" name="child_name" required>
+    
+            <label for="child_age">Âge de l'enfant :</label>
+            <input type="text" id="child_age" name="child_age" required>
+    
+            <button type="submit">Soumettre</button>
+        </form>
+    </div>
+    
+    <!-- Formulaire d'inscription Primaire -->
+    <div id="inscription-primaire" class="form-container">
+        <h3>Inscription au Programme Primaire</h3>
+        <form action="inscription_primaire.php" method="post">
+            <label for="parent_name">Nom du parent :</label>
+            <input type="text" id="parent_name" name="parent_name" required>
+    
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="child_name">Nom de l'enfant :</label>
+            <input type="text" id="child_name" name="child_name" required>
+    
+            <label for="child_age">Âge de l'enfant :</label>
+            <input type="text" id="child_age" name="child_age" required>
+    
+            <button type="submit">Soumettre</button>
+        </form>
+    </div>
+    
+    <section id="contact">
+        <h2 class="un">Nous contacter</h2>
+        <p class="un">Pour plus d'informations ou pour nous contacter, veuillez remplir le formulaire ci-dessous :</p>
+        <form action="contact.php" method="post">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 CS La Victoire. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
